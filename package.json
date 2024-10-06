@@ -1,0 +1,17 @@
+
+{
+  "manifest_version": 3,
+
+  "name": "E Product Displayer",
+  "description": "A simple extension that extracts data out of website and shwos it.",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting","tabs"],
+  "action": {
+    "default_popup": "popup.html"
+    
+  },
+  "content_scripts":[{
+    "matches":["https://zara.com","https://zara.com/in"],
+    "js":["content.js"]
+  }]
+}

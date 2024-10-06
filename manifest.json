@@ -1,0 +1,17 @@
+{
+        "manifest_version": 3,
+        "name": "Get Product Info",
+        "version": "1.0",
+        "description": "Get the current tab URL for extracting product info",
+        "permissions": ["activeTab","scripting","storage"],
+       
+        "action": {
+          "default_popup": "popup.html",
+          "default_icon":"ext_icon.svg"
+        },
+      
+        "background": {
+          "service_worker": "background.js"
+        }
+      }
+      
